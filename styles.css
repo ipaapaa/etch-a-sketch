@@ -47,8 +47,23 @@ h1{
     width:20px;
     height: 20px;
     background-color: #A2CA71;
-    border: rgb(49, 14, 14) solid 1px;
+    
     margin: 0;
     box-sizing: border-box;
 }
 
+.clear{
+    margin-top: 2em;
+    padding: 3px 15px 3px 15px;
+    border: #1b411c solid 2px;
+    border-radius: 9px;
+    background-color: #F6E96B;
+    color: #152e15;
+    font-weight: 500;
+
+}
+
+.clear:hover{
+    background-color: #387F39;
+    color: #F6E96B;
+}
