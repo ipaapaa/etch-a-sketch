@@ -59,9 +59,26 @@ document.addEventListener("DOMContentLoaded", function() {
                     }
                 }
             });
-}
+    }
+
+    function clearDrawing (){
+
+        const gridBox = document.querySelectorAll(".gridbox");
+        const buttonClear = document.querySelector(".clear");
+
+        buttonClear.addEventListener("click",() => {
+            gridBox.forEach((box) => {
+                box.style.backgroundColor = "#A2CA71";
+
+            })
+
+        })
+
+    }
+
 
     generateGrid();
+    clearDrawing();
     toggleDrawing();
     
 
