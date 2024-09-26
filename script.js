@@ -1,4 +1,4 @@
-document.addEventListener("DOMContentLoaded", function() {
+
 
 function generateGrid(){
     const container = document.querySelector(".container");
@@ -20,9 +20,30 @@ function generateGrid(){
     }
 }
 
+function changeColor(){
+    const gridBox = document.querySelectorAll(".gridbox");
+    gridBox.forEach((box) => {
+        box.addEventListener("mouseover", () => {
+            box.style.backgroundColor = "#183419";
+        })
+    })
+}
+
+function startDrawing(){
+    document.addEventListener("keydown", (event) => {
+        if (event.key === " " || event.key === "Space"){
+            changeColor();
+        }
+    });
 
 
+    
+}
 
-generateGrid();
+document.addEventListener("DOMContentLoaded", function() {
+
+    generateGrid();
+    startDrawing();
+
 
 })
